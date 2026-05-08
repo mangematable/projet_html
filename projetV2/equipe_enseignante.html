@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Équipe Enseignante - EFREI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><div class="brand-logo"><img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"></div><div class="brand-text"><strong>Département Informatique</strong><span>EFREI Paris</span></div></a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li><a href="cours_formation.html">Cours &amp; Formations</a></li><li><a class="active" href="equipe_enseignante.html">Équipe Enseignante</a></li><li><a href="contact.html">Contact &amp; À propos</a></li><li></ul></nav>
+      <div class="header-actions"><input class="search-box" id="teacherSearch" type="search" placeholder="Rechercher un enseignant..."><a class="btn" href="contact.html">Espace Étudiant</a></div>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">👩‍🏫 Département informatique</span>
+        <h1>Notre Équipe Enseignante</h1>
+        <p>Des enseignants, chercheurs et professionnels accompagnent les étudiants dans leur progression.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat"><strong>Dev</strong><span>programmation & web</span></div>
+          <div class="stat"><strong>IA</strong><span>data & machine learning</span></div>
+          <div class="stat"><strong>Cyber</strong><span>sécurité des systèmes</span></div>
+          <div class="stat"><strong>Cloud</strong><span>DevOps & infrastructures</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="toolbar">
+          <div>
+            <h2 style="color:var(--blue)">Liste des enseignants</h2>
+            <p id="resultCount" style="color:var(--muted)">6 enseignant(s) affiché(s)</p>
+          </div>
+          <div class="filters" aria-label="Filtres équipe">
+            <button class="filter-btn active" type="button" data-team-filter="all">Tous</button>
+            <button class="filter-btn" type="button" data-team-filter="info">Informatique</button>
+            <button class="filter-btn" type="button" data-team-filter="ia">Intelligence Artificielle</button>
+            <button class="filter-btn" type="button" data-team-filter="secu">Cybersécurité</button>
+            <button class="filter-btn" type="button" data-team-filter="math">Mathématiques</button>
+          </div>
+        </div>
+
+        <div class="team-grid">
+          <article class="card teacher-card" data-team-type="info"><div class="avatar">👩‍💼</div><h3>Dr. Nathalie Morand</h3><p><span class="badge">Informatique</span></p><p>Maître de conférences, spécialiste en architecture logicielle et programmation orientée objet.</p><div class="tags"><span>Java</span><span>UML</span><span>Design Patterns</span></div></article>
+          <article class="card teacher-card" data-team-type="ia"><div class="avatar">👨‍🔬</div><h3>Prof. Henri Dufresne</h3><p><span class="badge">Intelligence Artificielle</span></p><p>Chercheur en deep learning et NLP, responsable de plusieurs projets data.</p><div class="tags"><span>Python</span><span>TensorFlow</span><span>NLP</span></div></article>
+          <article class="card teacher-card" data-team-type="secu"><div class="avatar">👩‍💻</div><h3>Dr. Camille Bertrand</h3><p><span class="badge">Cybersécurité</span></p><p>Experte en cryptographie appliquée, sécurité réseau et analyse de risques.</p><div class="tags"><span>Linux</span><span>Réseau</span><span>Audit</span></div></article>
+          <article class="card teacher-card" data-team-type="info"><div class="avatar">👨‍🏫</div><h3>Prof. Taoufik Amrani</h3><p><span class="badge">Informatique</span></p><p>Spécialiste en bases de données, systèmes distribués et cloud computing.</p><div class="tags"><span>SQL</span><span>Docker</span><span>Cloud</span></div></article>
+          <article class="card teacher-card" data-team-type="math"><div class="avatar">👩‍🔬</div><h3>Dr. Léa Plaat</h3><p><span class="badge">Mathématiques</span></p><p>Enseigne les statistiques, probabilités et mathématiques appliquées à la data.</p><div class="tags"><span>Stats</span><span>Algèbre</span><span>Python</span></div></article>
+          <article class="card teacher-card" data-team-type="ia"><div class="avatar">👨‍💼</div><h3>M. Etienne Gauthier</h3><p><span class="badge">Intelligence Artificielle</span></p><p>Lead Data Scientist, intervenant sur les modules MLOps et déploiement de modèles.</p><div class="tags"><span>MLOps</span><span>Scikit-learn</span><span>Kubernetes</span></div></article>
+        </div>
+        <div class="no-result hidden" id="noResult" style="text-align:center;margin-top:30px;color:var(--muted)">😕 Aucun enseignant ne correspond à votre recherche.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title"><h2>Agenda des permanences</h2><p>Horaires de disponibilité des enseignants pour la semaine.</p></div>
+        <div class="table-wrap">
+          <table class="data-table agenda-table">
+            <thead><tr><th>Enseignant</th><th>Lundi</th><th>Mardi</th><th>Mercredi</th><th>Jeudi</th><th>Vendredi</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Dr. Morand</strong></td><td class="available">10h-12h</td><td class="busy">-</td><td class="available">14h-16h</td><td class="busy">-</td><td class="available">9h-11h</td></tr>
+              <tr><td><strong>Prof. Dufresne</strong></td><td class="busy">-</td><td class="available">13h-15h</td><td class="busy">-</td><td class="available">10h-12h</td><td class="busy">-</td></tr>
+              <tr><td><strong>Dr. Bertrand</strong></td><td class="available">14h-16h</td><td class="busy">-</td><td class="busy">-</td><td class="available">13h-15h</td><td class="available">11h-13h</td></tr>
+              <tr><td><strong>Prof. Amrani</strong></td><td class="busy">-</td><td class="available">9h-11h</td><td class="available">15h-17h</td><td class="busy">-</td><td class="busy">-</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid"><div class="footer-col"><a class="footer-brand" href="index.html"><img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"></a><p>Département Informatique – site vitrine.</p><div class="socials"><a href="https://www.facebook.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="Facebook EFREI"><img src="img/icon-facebook.svg" alt="Facebook"></a><a href="https://www.twitter.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter EFREI"><img src="img/icon-x.svg" alt="X"></a><a href="https://www.linkedin.com/school/efrei" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn EFREI"><img src="img/icon-linkedin.svg" alt="LinkedIn"></a><a href="https://www.instagram.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="Instagram EFREI"><img src="img/icon-instagram.svg" alt="Instagram"></a><a href="https://www.youtube.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="YouTube EFREI"><img src="img/icon-youtube.svg" alt="YouTube"></a></div></div><div class="footer-col"><h4>Navigation</h4><a href="index.html">Accueil</a><a href="cours_formation.html">Cours &amp; Formations</a><a href="equipe_enseignante.html">Équipe Enseignante</a><a href="contact.html">Contact &amp; À propos</a></div><div class="footer-col"><h4>Formations</h4><a href="cours_formation.html">Bachelor Informatique</a><a href="cours_formation.html">Mastère Cybersécurité</a><a href="cours_formation.html">Cycle Ingénieur IA & Data</a><a href="cours_formation.html">Digital & Management</a></div><div class="footer-col"><h4>Contact</h4><p>📍 Villejuif</p><p>📞 +33 1 46 77 46 77</p><p>✉️ dept.info@efrei.fr</p></div></div>
+    <div class="container footer-bottom"><p>© 2026 Département Informatique - EFREI Paris.</p><div class="footer-links"><a href="#">Mentions légales</a><a href="#">Accessibilité</a><a href="#">Cookies</a></div></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

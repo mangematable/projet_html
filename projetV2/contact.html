@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & À propos - EFREI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><div class="brand-logo"><img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"></div><div class="brand-text"><strong>Département Informatique</strong><span>EFREI Paris</span></div></a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li><a href="cours_formation.html">Cours &amp; Formations</a></li><li><a href="equipe_enseignante.html">Équipe Enseignante</a></li><li><a class="active" href="contact.html">Contact &amp; À propos</a></li></ul></nav>
+      <div class="header-actions"><input class="search-box" type="search" placeholder="Rechercher..."><a class="btn" href="#contactForm">Espace Étudiant</a></div>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">📩 Projet Web TI402</span>
+        <h1>Contact & À propos</h1>
+        <p>Présentation du projet, membres du groupe et formulaire de contact interactif.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title"><h2>À propos du projet</h2><p>Ce site vitrine est inspiré de l'EFREI, grande école d'ingénieurs généraliste et numérique. Il présente les formations, le département informatique, l'équipe pédagogique, un formulaire de contact et un plan du site.</p></div>
+        <div class="cards-grid">
+          <article class="card"><div class="card-icon">🌐</div><h3>Objectif</h3><p>Présenter l'EFREI et son univers numérique de façon claire : formations, campus, métiers et vie pédagogique.</p></article>
+          <article class="card"><div class="card-icon">🧩</div><h3>Technologies</h3><p>Site réalisé en HTML5, CSS3 et JavaScript, sans framework, avec des interactions simples et lisibles.</p></article>
+          <article class="card"><div class="card-icon">⚡</div><h3>Fonctions dynamiques</h3><p>Carrousel, filtres de formations, recherche d'enseignants, agenda et validation du formulaire.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-title"><h2>Équipe de projet</h2><p>Une équipe de deux membres a collaboré pour concevoir et réaliser ce site vitrine, en répartissant les tâches de manière équilibrée.</p></div>
+        <div class="members-grid">
+          <article class="member-card"><div class="avatar">👤</div><h3>Emile MARIA FRANCIS</h3><p><strong>Rôle :</strong> Équipe Enseignante et Contact & Àpropos </p><p>Tableau, filtres et contenus pédagogiques</p></article>
+          <article class="member-card"><div class="avatar">👤</div><h3>Guillaume PIFFETEAU</h3><p><strong>Rôle :</strong> Accueil et Cours & Formations</p><p>Structure HTML et contenu de présentation.</p></article>
+         
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-layout">
+        <div class="form-card">
+          <h2 style="color:var(--blue);margin-bottom:14px">Formulaire de contact</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group"><label for="name">Nom</label><input id="name" name="name" type="text" placeholder="Votre nom"><p class="error-message" id="nameError"></p></div>
+              <div class="form-group"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="prenom.nom@efrei.net"><p class="error-message" id="emailError"></p></div>
+            </div>
+            <div class="form-group"><label for="subject">Sujet</label><select id="subject" name="subject"><option value="">Choisir un sujet</option><option>Demande d'information</option><option>Question sur les formations</option><option>Contact enseignant</option><option>Autre</option></select><p class="error-message" id="subjectError"></p></div>
+            <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" placeholder="Votre message..."></textarea><p class="error-message" id="messageError"></p></div>
+            <button class="btn" type="submit">Envoyer</button>
+            <p class="success-message" id="successMessage">✅ Votre message a bien été validé côté navigateur.</p>
+          </form>
+        </div>
+        <aside class="info-card">
+          <h2 style="color:var(--blue);margin-bottom:14px">Informations utiles</h2>
+          <p><strong>Adresse :</strong><br>30-32 Avenue de la République, 94800 Villejuif</p><br>
+          <p><strong>Téléphone :</strong><br>+33 1 46 77 46 77</p><br>
+          <p><strong>Email admissions :</strong><br>admissions@efrei.fr</p><br>
+          <p><strong>Campus Paris :</strong><br>Villejuif, aux portes de Paris</p>
+        
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid"><div class="footer-col"><a class="footer-brand" href="index.html"><img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"></a><p>Département Informatique – site vitrine.</p><div class="socials"><a href="https://www.facebook.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="Facebook EFREI"><img src="img/icon-facebook.svg" alt="Facebook"></a><a href="https://www.twitter.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter EFREI"><img src="img/icon-x.svg" alt="X"></a><a href="https://www.linkedin.com/school/efrei" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn EFREI"><img src="img/icon-linkedin.svg" alt="LinkedIn"></a><a href="https://www.instagram.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="Instagram EFREI"><img src="img/icon-instagram.svg" alt="Instagram"></a><a href="https://www.youtube.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="YouTube EFREI"><img src="img/icon-youtube.svg" alt="YouTube"></a></div></div><div class="footer-col"><h4>Navigation</h4><a href="index.html">Accueil</a><a href="cours_formation.html">Cours &amp; Formations</a><a href="equipe_enseignante.html">Équipe Enseignante</a><a href="contact.html">Contact &amp; À propos</a></div><div class="footer-col"><h4>Formations</h4><a href="cours_formation.html">Bachelor Informatique</a><a href="cours_formation.html">Mastère Cybersécurité</a><a href="cours_formation.html">Cycle Ingénieur IA & Data</a><a href="cours_formation.html">Digital & Management</a></div><div class="footer-col"><h4>Contact</h4><p>📍 Villejuif</p><p>📞 +33 1 46 77 46 77</p><p>✉️ dept.info@efrei.fr</p></div></div>
+    <div class="container footer-bottom"><p>© 2026 Département Informatique - EFREI Paris.</p><div class="footer-links"><a href="#">Mentions légales</a><a href="#">Accessibilité</a><a href="#">Cookies</a></div></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
