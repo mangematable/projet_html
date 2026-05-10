@@ -31,7 +31,7 @@ Il met en avant les formations, les domaines d’expertise, les informations de 
 ## Structure du projet
 
 ```text
-PROJETV4/
+projetV2/
 │
 ├── index.html
 ├── cours_formation.html
