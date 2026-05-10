@@ -95,8 +95,7 @@ Ou avec Visual Studio Code :
 ## Exemple avec Git
 
 ```bash
-git clone https://github.com/votre-utilisateur/votre-repository.git
-cd votre-repository
+git clone https://github.com/mangematable/projet_html.git
 ```
 
 Puis ouvrir `index.html` dans un navigateur.
