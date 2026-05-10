@@ -1,183 +1,168 @@
 <!DOCTYPE html>
+<!-- FICHIER HTML : index.html | Page du site vitrine EFREI. -->
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil - Département Informatique EFREI</title>
-  <meta name="description" content="Site vitrine du département informatique de l'EFREI Paris.">
+  <title>EFREI Paris — Grande école du numérique</title>
+  <meta name="description" content="Site vitrine EFREI Paris : formations, campus, numérique, admissions et vie étudiante.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu principal</a>
-
+  <!-- HEADER : logo EFREI, menu de navigation principal, recherche et bouton de contact -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="HTML/index.html" aria-label="Accueil EFREI">
-        <div class="brand-logo"><img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"></div>
-        <div class="brand-text">
-          <strong>Département Informatique</strong>
-          <span>EFREI Paris</span>
-        </div>
+      <a class="brand" href="index.html" aria-label="Accueil EFREI">
+        <img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris">
+        <span>Grande école du numérique</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-      <nav class="main-nav" aria-label="Navigation principale">
-        <ul>
-          <li><a class="active" href="HTML/index.html">Accueil</a></li>
-          <li><a href="HTML/cours_formation.html">Cours &amp; Formations</a></li>
-          <li><a href="HTML/equipe_enseignante.html">Équipe Enseignante</a></li>
-          <li><a href="HTML/contact.html">Contact &amp; À propos</a></li>
-         
-        </ul>
-      </nav>
+      <nav class="main-nav" aria-label="Navigation principale"><ul><li><a class="active" href="index.html">Accueil</a></li><li><a href="cours_formation.html">Formations</a></li><li><a href="equipe_enseignante.html">Expertises</a></li><li><a href="contact.html">Contact & agenda</a></li><li><a href="credits.html">Crédits</a></li></ul></nav>
       <div class="header-actions">
         <input class="search-box" type="search" placeholder="Rechercher..." aria-label="Rechercher">
-        <a class="btn" href="HTML/contact.html">Espace Étudiant</a>
+        <a class="btn" href="contact.html#contactForm">Prendre contact</a>
       </div>
     </div>
   </header>
 
+  <!-- CONTENU PRINCIPAL DE LA PAGE D'ACCUEIL -->
   <main id="contenu">
-    <section class="hero">
+    <!-- SECTION HERO : première bannière visible avec accroche, boutons et carrousel -->
+    <section class="hero hero-home">
       <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">🎓 Site vitrine EFREI</span>
-          <h1>EFREI Paris — Grande école du numérique</h1>
-          <p>Un site vitrine inspiré de l'EFREI : école d'ingénieurs généraliste et numérique, tournée vers l'informatique, la cybersécurité, la data, l'intelligence artificielle et l'innovation.</p>
+        <div class="hero-copy reveal">
+          <span class="eyebrow">École d'ingénieurs & experts du numérique</span>
+          <h1>Construire son avenir dans le numérique avec l'EFREI</h1>
+          <p>L'EFREI forme des ingénieurs et experts capables d'agir sur toute la chaîne de valeur du numérique : développement logiciel, cybersécurité, data science, intelligence artificielle, cloud, systèmes d'information, e-business et marketing digital.</p>
           <div class="hero-buttons">
-            <a class="btn" href="HTML/cours_formation.html">Voir les formations</a>
-            <a class="btn secondary" href="HTML/equipe_enseignante.html">Découvrir l'équipe</a>
+            <a class="btn" href="cours_formation.html">Découvrir les formations</a>
+            <a class="btn secondary" href="contact.html#calendar">Voir les événements</a>
+          </div>
+          <div class="hero-proof">
+            <span>📍 Campus Paris - Villejuif</span>
+            <span>📍 Campus Bordeaux</span>
+            <span>✅ Programme Grande École habilité CTI</span>
           </div>
         </div>
-        <div class="hero-card" aria-label="Carrousel de présentation">
-          <article class="slide active">
-            <div class="slide-icon">💻</div>
-            <h2>Grande école du numérique</h2>
-            <p>L'EFREI forme des profils capables de répondre aux besoins du numérique : développement, cybersécurité, data, IA, cloud et management digital.</p>
-          </article>
-          <article class="slide">
-            <div class="slide-icon">🚀</div>
-            <h2>Pédagogie par projets</h2>
-            <p>Les étudiants apprennent en construisant des projets concrets : sites web, applications, systèmes, projets data et solutions numériques.</p>
-          </article>
-          <article class="slide">
-            <div class="slide-icon">🤝</div>
-            <h2>Campus & vie étudiante</h2>
-            <p>Le campus de Villejuif, proche de Paris, propose un environnement d'études moderne pour les formations ingénieur, tech et numérique.</p>
-          </article>
-          <div class="slider-dots" aria-label="Contrôles du carrousel">
-            <button class="dot active" type="button" aria-label="Slide 1"></button>
-            <button class="dot" type="button" aria-label="Slide 2"></button>
-            <button class="dot" type="button" aria-label="Slide 3"></button>
+        <div class="hero-visual reveal">
+          <div class="slider-card" aria-label="Carrousel EFREI">
+            <article class="slide active">
+              <span class="slide-icon">💻</span>
+              <h2>Informatique & numérique</h2>
+              <p>Des parcours orientés technologie, ingénierie logicielle, data, IA, cybersécurité et management digital.</p>
+            </article>
+            <article class="slide">
+              <span class="slide-icon">🚀</span>
+              <h2>Innovation & projets</h2>
+              <p>Une pédagogie tournée vers les projets concrets, l'entreprise, la recherche appliquée et l'international.</p>
+            </article>
+            <article class="slide">
+              <span class="slide-icon">🤝</span>
+              <h2>Entreprises & carrière</h2>
+              <p>Un réseau entreprises, des stages, de l'alternance et un accompagnement carrière pour professionnaliser les étudiants.</p>
+            </article>
+            <div class="slider-dots">
+              <button class="dot active" type="button" aria-label="Diapositive 1"></button>
+              <button class="dot" type="button" aria-label="Diapositive 2"></button>
+              <button class="dot" type="button" aria-label="Diapositive 3"></button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="presentation">
+    <!-- CHIFFRES CLÉS : données rapides pour rassurer le visiteur -->
+    <section class="numbers-section">
+      <div class="container numbers-grid">
+        <article><strong data-counter="1936">1936</strong><span>année de création</span></article>
+        <article><strong data-counter="5800">5 800</strong><span>étudiants</span></article>
+        <article><strong data-counter="2">2</strong><span>campus : Paris & Bordeaux</span></article>
+        <article><strong data-counter="3">3</strong><span>grands cursus</span></article>
+      </div>
+    </section>
+
+    <!-- POINTS FORTS : raisons de choisir l'EFREI -->
+    <section class="section">
       <div class="container">
-        <div class="section-title">
-          <h2>Présentation du département</h2>
-          <p>L'EFREI est une école d'ingénieurs et d'experts du numérique. Ce site vitrine présente une version simplifiée du département informatique : formations, équipe pédagogique, agenda et contact.</p>
+        <div class="section-title reveal">
+          <span class="small-title">Pourquoi choisir l'EFREI ?</span>
+          <h2>Une école pensée pour les métiers du numérique</h2>
+          <p>Depuis 1936, l'EFREI développe des formations adaptées aux avancées technologiques et aux besoins des entreprises.</p>
         </div>
-        <div class="cards-grid">
-          <article class="card">
-            <div class="card-icon">📘</div>
-            <h3>Une école historique</h3>
-            <p>Fondée en 1936, l'EFREI s'est construite autour de l'informatique, de l'électronique et des technologies numériques.</p>
-            <a href="#presentation">En savoir plus →</a>
-          </article>
-          <article class="card">
-            <div class="card-icon">📊</div>
-            <h3>Parcours variés</h3>
-            <p>Le site officiel présente des parcours du BTS au Bac+5 : prépa intégrée, cycle ingénieur, bachelors, masters et mastères.</p>
-            <a href="#chiffres">Voir les statistiques →</a>
-          </article>
-          <article class="card">
-            <div class="card-icon">📰</div>
-            <h3>Domaines d'avenir</h3>
-            <p>Les contenus mettent en avant les domaines clés : cybersécurité, intelligence artificielle, data, cloud, développement et innovation.</p>
-            <a href="#actualites">Toutes les actualités →</a>
-          </article>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><span>🎓</span><h3>Programme Grande École</h3><p>Un cursus ingénieur en 5 ans avec prépa intégrée puis cycle ingénieur, reconnu par la Commission des titres d'ingénieur.</p></article>
+          <article class="feature-card reveal"><span>🧠</span><h3>Expertises numériques</h3><p>Data science, intelligence artificielle, cybersécurité, développement logiciel, cloud, réseaux et systèmes d'information.</p></article>
+          <article class="feature-card reveal"><span>🌍</span><h3>International</h3><p>Une ouverture internationale avec mobilité, échanges académiques et parcours permettant de construire un profil global.</p></article>
+          <article class="feature-card reveal"><span>💼</span><h3>Entreprise & alternance</h3><p>Stages, alternance, Career Center, rencontres entreprises et accompagnement vers les métiers du numérique.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="chiffres">
-      <div class="container">
-        <div class="section-title">
-          <h2>Chiffres clés</h2>
-          <p>Quelques chiffres de présentation pour donner une vision rapide de l'école et de son positionnement.</p>
+    <!-- CURSUS : présentation synthétique des grands parcours -->
+    <section class="section light-section">
+      <div class="container split-layout">
+        <div class="reveal">
+          <span class="small-title">Les cursus</span>
+          <h2>Des parcours du post-bac au Bac+5</h2>
+          <p>L'EFREI structure son offre autour de grands parcours : Programme Grande École d'ingénieurs, Programmes Experts Technologie & Numérique, et Programmes Experts Digital & Management.</p>
+          <a class="btn" href="cours_formation.html">Explorer le catalogue</a>
         </div>
-        <div class="stats-grid">
-          <div class="stat"><strong>1936</strong><span>année de création</span></div>
-          <div class="stat"><strong>CTI</strong><span>diplôme ingénieur reconnu</span></div>
-          <div class="stat"><strong>2</strong><span>campus : Paris/Villejuif et Bordeaux</span></div>
-          <div class="stat"><strong>Bac+5</strong><span>cycle ingénieur & mastères</span></div>
+        <div class="path-list reveal">
+          <article><strong>Programme Grande École Ingénieurs</strong><span>Prépa intégrée, cycle ingénieur, spécialisations numériques.</span></article>
+          <article><strong>Technologie & Numérique</strong><span>BTS, bachelors et mastères orientés développement, cyber, cloud, data et IA.</span></article>
+          <article><strong>Digital & Management</strong><span>Parcours marketing digital, e-business, communication, UX et pilotage de projets.</span></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="actualites">
+    <section class="section">
       <div class="container">
-        <div class="section-title">
-          <h2>Actualités</h2>
-          <p>Exemples d'articles pouvant enrichir le site vitrine.</p>
+        <div class="section-title reveal">
+          <span class="small-title">Domaines clés</span>
+          <h2>Des expertises alignées avec les besoins des entreprises</h2>
         </div>
-        <div class="news-grid">
-          <article class="news-item">
-            <time datetime="2026-05-08">8 mai 2026</time>
-            <h3>Focus numérique</h3>
-            <p>Le site présente les grandes thématiques du numérique : programmation, systèmes, réseaux, data, IA et cybersécurité.</p>
-          </article>
-          <article class="news-item">
-            <time datetime="2026-05-15">15 mai 2026</time>
-            <h3>Projet Web TI402</h3>
-            <p>Réalisation d'un site vitrine en HTML5, CSS3 et JavaScript, avec maquette interactive et navigation entre les pages.</p>
-          </article>
+        <div class="domains-grid">
+          <article class="domain-card reveal"><span>💻</span><h3>Développement logiciel</h3><p>Web, mobile, back-end, architecture applicative et DevOps.</p></article>
+          <article class="domain-card reveal"><span>🔐</span><h3>Cybersécurité</h3><p>Sécurité des systèmes, réseaux, audit, cyberdéfense et confiance numérique.</p></article>
+          <article class="domain-card reveal"><span>🤖</span><h3>Data & IA</h3><p>Data science, machine learning, IA générative, exploitation et valorisation des données.</p></article>
+          <article class="domain-card reveal"><span>☁️</span><h3>Cloud & systèmes</h3><p>Réseaux, infrastructures, cloud computing, IT et systèmes d'information.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPEL À L'ACTION : redirige vers l'agenda ou le formulaire -->
+    <section class="cta-banner">
+      <div class="container reveal">
+        <h2>Envie de découvrir l'EFREI ?</h2>
+        <p>Consultez les formations, explorez les pôles d'expertise et utilisez le calendrier dynamique pour repérer les événements d'admission.</p>
+        <div class="hero-buttons center">
+          <a class="btn" href="contact.html#calendar">Voir l'agenda</a>
+          <a class="btn secondary" href="contact.html#contactForm">Demander une information</a>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER : liens de navigation, réseaux sociaux et informations de contact -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
-        <a class="footer-brand" href="index.html"><img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"></a>
-        <p>Département Informatique – former les ingénieurs et experts du numérique de demain.</p>
+        <img class="footer-logo" src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris">
+        <p>Grande école généraliste et numérique, campus Paris-Villejuif et Bordeaux.</p>
         <div class="socials">
-          <a href="https://www.facebook.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="Facebook EFREI"><img src="img/icon-facebook.svg" alt="Facebook"></a>
-          <a href="https://www.twitter.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter EFREI"><img src="img/icon-x.svg" alt="X"></a>
-          <a href="https://www.linkedin.com/school/efrei" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn EFREI"><img src="img/icon-linkedin.svg" alt="LinkedIn"></a>
-          <a href="https://www.instagram.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="Instagram EFREI"><img src="img/icon-instagram.svg" alt="Instagram"></a>
-          <a href="https://www.youtube.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="YouTube EFREI"><img src="img/icon-youtube.svg" alt="YouTube"></a>
+          <a href="https://www.facebook.com/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-facebook.svg" alt="Facebook"></a>
+          <a href="https://www.twitter.com/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-x.svg" alt="X"></a>
+          <a href="https://www.linkedin.com/school/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-linkedin.svg" alt="LinkedIn"></a>
+          <a href="https://www.instagram.com/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-instagram.svg" alt="Instagram"></a>
+          <a href="https://www.youtube.com/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-youtube.svg" alt="YouTube"></a>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Navigation</h4>
-        <a href="HTML/index.html">Accueil</a>
-        <a href="HTML/cours_formation.html">Cours &amp; Formations</a>
-        <a href="HTML/equipe_enseignante.html">Équipe Enseignante</a>
-        <a href="HTML/contact.html">Contact &amp; À propos</a>
-      
-      </div>
-      <div class="footer-col">
-        <h4>Formations</h4>
-        <a href="HTML/cours_formation.html">Bachelor Informatique</a>
-        <a href="HTML/cours_formation.html">Mastère Cybersécurité</a>
-        <a href="HTML/cours_formation.html">Cycle Ingénieur IA & Data</a>
-        <a href="HTML/cours_formation.html">Digital & Management</a>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>📍 30-32 Avenue de la République, 94800 Villejuif</p>
-        <p>📞 +33 1 46 77 46 77</p>
-        <p>✉️ dept.info@efrei.fr</p>
-      </div>
+      <div class="footer-col"><h4>Navigation</h4><a href="index.html">Accueil</a><a href="cours_formation.html">Formations</a><a href="equipe_enseignante.html">Expertises</a><a href="contact.html">Contact & agenda</a><a href="credits.html">Crédits</a></div>
+      <div class="footer-col"><h4>Formations</h4><a href="cours_formation.html">Programme Grande École</a><a href="cours_formation.html">Bachelors</a><a href="cours_formation.html">Mastères</a><a href="cours_formation.html">Digital & Management</a></div>
+      <div class="footer-col"><h4>Contacts</h4><p>Campus Paris : 30-32 Av. de la République, 94800 Villejuif</p><p>Campus Bordeaux : 83 Rue Lucien Faure, 33000 Bordeaux</p><p>admissions@efrei.fr</p></div>
     </div>
-    <div class="container footer-bottom">
-      <p>© 2026 Département Informatique - EFREI Paris.</p>
-      <div class="footer-links"><a href="#">Mentions légales</a><a href="#">Accessibilité</a><a href="#">Cookies</a></div>
-    </div>
+    <div class="container footer-bottom"><p>© 2026 EFREI Paris — Site vitrine de démonstration.</p><div><a href="contact.html">Contact</a> · <a href="credits.html">Crédits</a></div></div>
   </footer>
   <script src="js/main.js"></script>
 </body>

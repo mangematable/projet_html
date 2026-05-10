@@ -1,80 +1,90 @@
 <!DOCTYPE html>
+<!-- FICHIER HTML : cours_formation.html | Page du site vitrine EFREI. -->
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cours & Formations - EFREI</title>
+  <title>Formations — EFREI Paris</title>
+  <meta name="description" content="Catalogue des formations EFREI : Programme Grande École, bachelors, mastères, cybersécurité, data, IA, cloud et digital.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+  <!-- HEADER commun à toutes les pages -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html"><div class="brand-logo"><img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"></div><div class="brand-text"><strong>Département Informatique</strong><span>EFREI Paris</span></div></a>
+      <a class="brand" href="index.html"><img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"><span>Grande école du numérique</span></a>
       <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-      <nav class="main-nav" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li><a class="active" href="cours_formation.html">Cours &amp; Formations</a></li><li><a href="equipe_enseignante.html">Équipe Enseignante</a></li><li><a href="contact.html">Contact &amp; À propos</a></li></ul></nav>
-      <div class="header-actions"><input class="search-box" type="search" placeholder="Rechercher..."><a class="btn" href="contact.html">Espace Étudiant</a></div>
+      <nav class="main-nav" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li><a class="active" href="cours_formation.html">Formations</a></li><li><a href="equipe_enseignante.html">Expertises</a></li><li><a href="contact.html">Contact & agenda</a></li><li><a href="credits.html">Crédits</a></li></ul></nav>
+      <div class="header-actions"><input class="search-box" type="search" placeholder="Rechercher..."><a class="btn" href="contact.html#contactForm">Prendre contact</a></div>
     </div>
   </header>
 
+  <!-- CONTENU PRINCIPAL : catalogue des formations EFREI -->
   <main id="contenu">
+    <!-- HERO DE PAGE : titre et introduction de la page Formations -->
     <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow">📚 Programmes académiques</span>
-        <h1>Nos Cours & Formations</h1>
-        <p>Explorez une sélection de parcours inspirés du site officiel de l'EFREI : Programme Grande École, bachelors, mastères et formations orientées numérique.</p>
+      <div class="container reveal">
+        <span class="eyebrow">Programmes & cursus</span>
+        <h1>Formations EFREI</h1>
+        <p>Une offre orientée ingénierie, technologies numériques et management digital : du post-bac au Bac+5, en initial ou en alternance selon les parcours.</p>
       </div>
     </section>
 
+    <!-- CATALOGUE FORMATIONS : cartes filtrables avec JavaScript -->
     <section class="section">
       <div class="container">
-        <div class="toolbar">
-          <div class="section-title" style="margin-bottom:0">
-            <h2>Catalogue des formations</h2>
-            <p>Utilisez les filtres pour afficher les parcours par niveau : Bachelor, Cycle Ingénieur, Mastère ou Programme Digital & Management.</p>
+        <div class="toolbar reveal">
+          <div class="section-title compact">
+            
+            <h2>Choisissez un parcours</h2>
+            
           </div>
           <div class="filters" aria-label="Filtres formations">
             <button class="filter-btn active" type="button" data-course-filter="all">Toutes</button>
-            <button class="filter-btn" type="button" data-course-filter="licence">Bachelor</button>
-            <button class="filter-btn" type="button" data-course-filter="master">Ingénieur</button>
-            <button class="filter-btn" type="button" data-course-filter="mba">Mastère</button>
+            <button class="filter-btn" type="button" data-course-filter="ingenieur">Ingénieur</button>
+            <button class="filter-btn" type="button" data-course-filter="tech">Tech & numérique</button>
+            <button class="filter-btn" type="button" data-course-filter="digital">Digital</button>
+            <button class="filter-btn" type="button" data-course-filter="ms">Mastères</button>
           </div>
         </div>
 
-        <div class="table-wrap">
+        <div class="program-grid">
+          <article class="program-card reveal" data-course-type="ingenieur"><span class="badge">Ingénieur · Bac+5</span><h3>Programme Grande École Ingénieurs</h3><p>Formation d'ingénieur généraliste du numérique : 2 ans de prépa intégrée puis 3 ans de cycle ingénieur avec spécialisation progressive.</p><ul><li>Prépa intégrée scientifique & numérique</li><li>Cycle ingénieur informatique & numérique</li><li>Diplôme habilité CTI</li></ul><a href="contact.html#contactForm">Demander une brochure →</a></article>
+          <article class="program-card reveal" data-course-type="ingenieur"><span class="badge">Cycle ingénieur</span><h3>Informatique & Numérique</h3><p>Un cycle orienté conception, déploiement et gouvernance de solutions numériques complexes.</p><ul><li>Data science, IA et logiciel</li><li>Cloud, réseaux et sécurité</li><li>Projets, innovation et entreprise</li></ul><a href="contact.html#calendar">Voir les événements →</a></article>
+          <article class="program-card reveal" data-course-type="tech"><span class="badge">Bachelor</span><h3>Développeur Web & IA</h3><p>Parcours pour apprendre à programmer, développer des applications et intégrer les outils d'intelligence artificielle.</p><ul><li>Front-end & back-end</li><li>Bases de données</li><li>IA appliquée au développement</li></ul><a href="contact.html#contactForm">Être rappelé →</a></article>
+          <article class="program-card reveal" data-course-type="tech"><span class="badge">Bachelor</span><h3>Cybersécurité & Ethical Hacking</h3><p>Formation centrée sur la protection des systèmes d'information, les méthodes d'audit et la sécurité offensive responsable.</p><ul><li>Sécurité réseau</li><li>Ethical hacking</li><li>Analyse des risques</li></ul><a href="contact.html#contactForm">Poser une question →</a></article>
+          <article class="program-card reveal" data-course-type="ingenieur"><span class="badge">Filière</span><h3>Data Science</h3><p>Parcours pour analyser, structurer et valoriser les données afin de répondre aux enjeux économiques et technologiques.</p><ul><li>Big data</li><li>Machine learning</li><li>Visualisation & décision</li></ul><a href="contact.html#contactForm">En savoir plus →</a></article>
+          <article class="program-card reveal" data-course-type="ingenieur"><span class="badge">Filière</span><h3>Sécurité & Réseaux</h3><p>Spécialisation cybersécurité du cycle ingénieur avec des majeures orientées réseaux, cyberdéfense et confiance numérique.</p><ul><li>Réseaux</li><li>Cloud sécurisé</li><li>Cyberdéfense</li></ul><a href="contact.html#contactForm">En savoir plus →</a></article>
+          <article class="program-card reveal" data-course-type="digital"><span class="badge">Digital & Management</span><h3>Marketing digital, UX & e-business</h3><p>Des parcours orientés stratégie digitale, communication, expérience utilisateur, business et transformation numérique.</p><ul><li>UX design</li><li>Marketing digital</li><li>Gestion de projet</li></ul><a href="contact.html#contactForm">Contacter admissions →</a></article>
+          <article class="program-card reveal" data-course-type="ms"><span class="badge">Mastère spécialisé</span><h3>Data & Generative AI Engineering</h3><p>Programme de spécialisation pour intervenir sur des projets data et IA générative en environnement de production.</p><ul><li>Data engineering</li><li>IA générative</li><li>Industrialisation & MLOps</li></ul><a href="contact.html#contactForm">Demander une information →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABLEAU RÉCAPITULATIF : synthèse claire des parcours -->
+    <section class="section light-section">
+      <div class="container">
+        <div class="section-title reveal"><h2>Repères pour choisir</h2><p>Un tableau simple pour aider le visiteur à comprendre les différences entre les grandes familles de parcours.</p></div>
+        <div class="table-wrap reveal">
           <table class="data-table">
-            <thead>
-              <tr><th>Formation</th><th>Type</th><th>Durée</th><th>Description</th></tr>
-            </thead>
+            <thead><tr><th>Famille</th><th>Niveau</th><th>Objectif</th><th>Exemples de métiers</th></tr></thead>
             <tbody>
-              <tr data-course-type="licence"><td><strong>Bachelor Informatique</strong></td><td><span class="badge">Bachelor</span></td><td>3 ans</td><td>Parcours orienté développement, web, bases de données, DevOps, front-end et back-end.</td></tr>
-              <tr data-course-type="master"><td><strong>Programme Grande École Ingénieur</strong></td><td><span class="badge">Ingénieur</span></td><td>5 ans</td><td>Formation généraliste et numérique : sciences, informatique, projets, innovation et spécialisation progressive.</td></tr>
-              <tr data-course-type="master"><td><strong>Cycle Ingénieur Informatique & Numérique</strong></td><td><span class="badge">Ingénieur</span></td><td>3 ans</td><td>Cycle de spécialisation après la prépa : data, IA, cloud, cybersécurité, logiciel et systèmes numériques.</td></tr>
-              <tr data-course-type="mba"><td><strong>Mastère Cybersécurité</strong></td><td><span class="badge">Mastère</span></td><td>Bac+5</td><td>Formation spécialisée en sécurité des systèmes, réseaux, infrastructures, audit et gestion des risques.</td></tr>
-              <tr data-course-type="mba"><td><strong>Programme Digital & Management</strong></td><td><span class="badge">Mastère</span></td><td>Bac+5</td><td>Parcours orienté stratégie digitale, management de projet, innovation et transformation numérique.</td></tr>
+              <tr><td><strong>Programme Grande École</strong></td><td>Bac à Bac+5</td><td>Former des ingénieurs généralistes du numérique.</td><td>Ingénieur logiciel, data engineer, consultant cyber, architecte cloud.</td></tr>
+              <tr><td><strong>Programmes Experts Technologie & Numérique</strong></td><td>BTS à Bac+5</td><td>Former des experts opérationnels sur les métiers tech.</td><td>Développeur web, analyste cybersécurité, administrateur cloud, data analyst.</td></tr>
+              <tr><td><strong>Programmes Digital & Management</strong></td><td>Bac+3 à Bac+5</td><td>Former des profils capables de piloter des projets digitaux.</td><td>Chef de projet digital, UX manager, consultant transformation numérique.</td></tr>
             </tbody>
           </table>
         </div>
       </div>
     </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-title"><h2>Exemple de planning pédagogique</h2><p>Un tableau simple permet de présenter les cours, les volumes horaires et les compétences visées.</p></div>
-        <div class="timeline">
-          <article class="timeline-item"><h3>Semestre 1 - Fondamentaux</h3><p>HTML, CSS, JavaScript, algorithmique et bases de données.</p></article>
-          <article class="timeline-item"><h3>Semestre 2 - Spécialisation</h3><p>Cybersécurité, IA, cloud computing et projets en équipe.</p></article>
-          <article class="timeline-item"><h3>Projet final</h3><p>Réalisation d'un site web responsive avec interactions dynamiques.</p></article>
-        </div>
-      </div>
-    </section>
   </main>
 
+  <!-- FOOTER commun avec lien vers la page Crédits -->
   <footer class="site-footer">
-    <div class="container footer-grid"><div class="footer-col"><a class="footer-brand" href="index.html"><img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"></a><p>Département Informatique – site vitrine.</p><div class="socials"><a href="https://www.facebook.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="Facebook EFREI"><img src="img/icon-facebook.svg" alt="Facebook"></a><a href="https://www.twitter.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter EFREI"><img src="img/icon-x.svg" alt="X"></a><a href="https://www.linkedin.com/school/efrei" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn EFREI"><img src="img/icon-linkedin.svg" alt="LinkedIn"></a><a href="https://www.instagram.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="Instagram EFREI"><img src="img/icon-instagram.svg" alt="Instagram"></a><a href="https://www.youtube.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="YouTube EFREI"><img src="img/icon-youtube.svg" alt="YouTube"></a></div></div><div class="footer-col"><h4>Navigation</h4><a href="index.html">Accueil</a><a href="cours_formation.html">Cours &amp; Formations</a><a href="equipe_enseignante.html">Équipe Enseignante</a><a href="contact.html">Contact &amp; À propos</a></div><div class="footer-col"><h4>Formations</h4><a href="cours_formation.html">Bachelor Informatique</a><a href="cours_formation.html">Mastère Cybersécurité</a><a href="cours_formation.html">Cycle Ingénieur IA & Data</a><a href="cours_formation.html">Digital & Management</a></div><div class="footer-col"><h4>Contact</h4><p>📍 Villejuif</p><p>📞 +33 1 46 77 46 77</p><p>✉️ dept.info@efrei.fr</p></div></div>
-    <div class="container footer-bottom"><p>© 2026 Département Informatique - EFREI Paris.</p><div class="footer-links"><a href="#">Mentions légales</a><a href="#">Accessibilité</a><a href="#">Cookies</a></div></div>
+    <div class="container footer-grid"><div class="footer-col"><img class="footer-logo" src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"><p>Grande école généraliste et numérique, campus Paris-Villejuif et Bordeaux.</p><div class="socials"><a href="https://www.facebook.com/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-facebook.svg" alt="Facebook"></a><a href="https://www.twitter.com/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-x.svg" alt="X"></a><a href="https://www.linkedin.com/school/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-linkedin.svg" alt="LinkedIn"></a><a href="https://www.instagram.com/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-instagram.svg" alt="Instagram"></a><a href="https://www.youtube.com/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-youtube.svg" alt="YouTube"></a></div></div><div class="footer-col"><h4>Navigation</h4><a href="index.html">Accueil</a><a href="cours_formation.html">Formations</a><a href="equipe_enseignante.html">Expertises</a><a href="contact.html">Contact & agenda</a><a href="credits.html">Crédits</a></div><div class="footer-col"><h4>Formations</h4><a href="cours_formation.html">Programme Grande École</a><a href="cours_formation.html">Bachelors</a><a href="cours_formation.html">Mastères</a><a href="cours_formation.html">Digital & Management</a></div><div class="footer-col"><h4>Contacts</h4><p>Campus Paris : 30-32 Av. de la République, 94800 Villejuif</p><p>Campus Bordeaux : 83 Rue Lucien Faure, 33000 Bordeaux</p><p>admissions@efrei.fr</p></div></div>
+    <div class="container footer-bottom"><p>© 2026 EFREI Paris — Site vitrine de démonstration.</p><div><a href="contact.html">Contact</a> · <a href="credits.html">Crédits</a></div></div>
   </footer>
   <script src="js/main.js"></script>
 </body>
-
 </html>

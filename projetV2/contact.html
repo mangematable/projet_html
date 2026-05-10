@@ -1,83 +1,163 @@
 <!DOCTYPE html>
+<!-- FICHIER HTML : contact.html | Page du site vitrine EFREI. -->
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact & À propos - EFREI</title>
+  <title>Contact & agenda — EFREI Paris</title>
+  <meta name="description" content="Contact EFREI Paris et Bordeaux, admissions, formulaire et calendrier dynamique des événements.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+  <!-- HEADER commun à toutes les pages -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html"><div class="brand-logo"><img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"></div><div class="brand-text"><strong>Département Informatique</strong><span>EFREI Paris</span></div></a>
+      <a class="brand" href="index.html"><img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"><span>Grande école du numérique</span></a>
       <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-      <nav class="main-nav" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li><a href="cours_formation.html">Cours &amp; Formations</a></li><li><a href="equipe_enseignante.html">Équipe Enseignante</a></li><li><a class="active" href="contact.html">Contact &amp; À propos</a></li></ul></nav>
-      <div class="header-actions"><input class="search-box" type="search" placeholder="Rechercher..."><a class="btn" href="#contactForm">Espace Étudiant</a></div>
+      <nav class="main-nav" aria-label="Navigation principale"><ul><li><a href="index.html">Accueil</a></li><li><a href="cours_formation.html">Formations</a></li><li><a href="equipe_enseignante.html">Expertises</a></li><li><a class="active" href="contact.html">Contact & agenda</a></li><li><a href="credits.html">Crédits</a></li></ul></nav>
+      <div class="header-actions"><input class="search-box" type="search" placeholder="Rechercher..."><a class="btn" href="#contactForm">Prendre contact</a></div>
     </div>
   </header>
 
+  <!-- CONTENU PRINCIPAL : contact, admissions et agenda dynamique -->
   <main id="contenu">
+    <!-- HERO DE PAGE : introduction de la page Contact & agenda -->
     <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow">📩 Projet Web TI402</span>
-        <h1>Contact & À propos</h1>
-        <p>Présentation du projet, membres du groupe et formulaire de contact interactif.</p>
+      <div class="container reveal">
+        <span class="eyebrow">Admissions & campus</span>
+        <h1>Contactez l'EFREI</h1>
+        <p>Retrouvez les contacts utiles, les campus et un calendrier dynamique pour visualiser les événements d'admission et d'information.</p>
       </div>
     </section>
 
+    <!-- CAMPUS : coordonnées principales et informations utiles -->
     <section class="section">
       <div class="container">
-        <div class="section-title"><h2>À propos du projet</h2><p>Ce site vitrine est inspiré de l'EFREI, grande école d'ingénieurs généraliste et numérique. Il présente les formations, le département informatique, l'équipe pédagogique, un formulaire de contact et un plan du site.</p></div>
-        <div class="cards-grid">
-          <article class="card"><div class="card-icon">🌐</div><h3>Objectif</h3><p>Présenter l'EFREI et son univers numérique de façon claire : formations, campus, métiers et vie pédagogique.</p></article>
-          <article class="card"><div class="card-icon">🧩</div><h3>Technologies</h3><p>Site réalisé en HTML5, CSS3 et JavaScript, sans framework, avec des interactions simples et lisibles.</p></article>
-          <article class="card"><div class="card-icon">⚡</div><h3>Fonctions dynamiques</h3><p>Carrousel, filtres de formations, recherche d'enseignants, agenda et validation du formulaire.</p></article>
+        <div class="campus-grid">
+          <article class="campus-card reveal"><span class="campus-chip">Campus Paris</span><h2>Villejuif</h2><p>30-32 Avenue de la République<br>94800 Villejuif</p><p><strong>Téléphone :</strong> +33 1 88 28 90 01</p><p><strong>Email :</strong> admissions@efrei.fr</p><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=30-32+Avenue+de+la+République+94800+Villejuif" target="_blank" rel="noopener noreferrer">Voir sur Google Maps</a></article>
+          <article class="campus-card reveal"><span class="campus-chip">Campus Bordeaux</span><h2>Bordeaux</h2><p>83 Rue Lucien Faure<br>33000 Bordeaux</p><p><strong>Téléphone :</strong> +33 5 82 06 01 62</p><p><strong>Email :</strong> admissions@efrei.fr</p><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=83+Rue+Lucien+Faure+33000+Bordeaux" target="_blank" rel="noopener noreferrer">Voir sur Google Maps</a></article>
+          <article class="campus-card reveal"><span class="campus-chip">Admissions</span><h2>Renseignements</h2><p>Accueil général : +33 1 88 28 90 00</p><p>Pour une candidature, une visite de campus ou une question sur une formation, contactez le service admissions.</p><a class="btn" href="#contactForm">Envoyer une demande</a></article>
         </div>
       </div>
     </section>
 
-    <section class="section" style="padding-top:0">
+
+    <!-- ADMISSIONS : étapes pour candidater selon le profil -->
+    <section class="section light-section" id="admissions">
       <div class="container">
-        <div class="section-title"><h2>Équipe de projet</h2><p>Une équipe de deux membres a collaboré pour concevoir et réaliser ce site vitrine, en répartissant les tâches de manière équilibrée.</p></div>
-        <div class="members-grid">
-          <article class="member-card"><div class="avatar">👤</div><h3>Emile MARIA FRANCIS</h3><p><strong>Rôle :</strong> Équipe Enseignante et Contact & Àpropos </p><p>Tableau, filtres et contenus pédagogiques</p></article>
-          <article class="member-card"><div class="avatar">👤</div><h3>Guillaume PIFFETEAU</h3><p><strong>Rôle :</strong> Accueil et Cours & Formations</p><p>Structure HTML et contenu de présentation.</p></article>
-         
+        <div class="section-title reveal">
+          <span class="small-title">Admissions</span>
+          <h2>Comprendre les voies d'admission</h2>
+          
+        </div>
+
+        <div class="admissions-grid">
+          <article class="admissions-card reveal">
+            <span class="admission-step">01</span>
+            <h3>Post-bac</h3>
+            <p>Pour rejoindre l'école après le lycée, les candidats peuvent s'informer sur les formations post-bac et préparer leur dossier d'admission.</p>
+            <ul class="triangle-list">
+              <li>Programme Grande École en 5 ans</li>
+              <li>Bachelors orientés informatique, tech et digital</li>
+              <li>Découverte des campus et des événements d'information</li>
+            </ul>
+          </article>
+
+          <article class="admissions-card reveal">
+            <span class="admission-step">02</span>
+            <h3>Admissions parallèles</h3>
+            <p>Les étudiants déjà engagés dans le supérieur peuvent rejoindre un parcours selon leur niveau et leur projet professionnel.</p>
+            <ul class="triangle-list">
+              <li>Entrée possible après Bac+1, Bac+2, Bac+3 ou Bac+4 selon les formations</li>
+              <li>Étude du dossier académique et du projet de formation</li>
+              <li>Orientation vers le cursus le plus adapté</li>
+            </ul>
+          </article>
+
+          <article class="admissions-card reveal">
+            <span class="admission-step">03</span>
+            <h3>Alternance & professionnalisation</h3>
+            <p>L'alternance permet de combiner formation académique et expérience en entreprise dans les métiers du numérique.</p>
+            <ul class="triangle-list">
+              <li>Accompagnement dans la recherche d'entreprise</li>
+              <li>Développement de compétences techniques et professionnelles</li>
+              <li>Préparation aux métiers : data, cyber, cloud, logiciel, digital</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="admissions-actions reveal">
+          <a class="btn" href="#contactForm">Poser une question admissions</a>
+          <a class="btn secondary" href="https://www.efrei.fr/candidature/" target="_blank" rel="noopener noreferrer">Voir la candidature EFREI</a>
         </div>
       </div>
     </section>
 
+    <!-- CALENDRIER DYNAMIQUE : événements générés avec JavaScript -->
+    <section class="section" id="calendar">
+      <div class="container">
+        <div class="section-title reveal"><h2>Événements</h2></div>
+        <div class="calendar-layout reveal">
+          <div class="calendar-card">
+            <div class="calendar-header">
+              <button class="calendar-nav" id="prevMonth" type="button" aria-label="Mois précédent">‹</button>
+              <div><h3 id="calendarTitle">Mois</h3><p id="calendarSubtitle">Sélectionnez une date</p></div>
+              <button class="calendar-nav" id="nextMonth" type="button" aria-label="Mois suivant">›</button>
+            </div>
+            <div class="calendar-weekdays"><span>Lun</span><span>Mar</span><span>Mer</span><span>Jeu</span><span>Ven</span><span>Sam</span><span>Dim</span></div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+          </div>
+          <aside class="event-panel">
+            <h3>Événements du mois</h3>
+            <div id="eventList"></div>
+            
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULAIRE DE CONTACT : validation côté navigateur avec JavaScript -->
     <section class="section">
       <div class="container form-layout">
-        <div class="form-card">
-          <h2 style="color:var(--blue);margin-bottom:14px">Formulaire de contact</h2>
+        <div class="form-card reveal">
+          <span class="small-title">Formulaire</span>
+          <h2>Demande d'information</h2>
+         
           <form id="contactForm" novalidate>
             <div class="form-row">
-              <div class="form-group"><label for="name">Nom</label><input id="name" name="name" type="text" placeholder="Votre nom"><p class="error-message" id="nameError"></p></div>
-              <div class="form-group"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="prenom.nom@efrei.net"><p class="error-message" id="emailError"></p></div>
+              <div class="form-group"><label for="name">Nom complet</label><input id="name" name="name" type="text" placeholder="Votre nom"><p class="error-message" id="nameError"></p></div>
+              <div class="form-group"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="prenom.nom@email.fr"><p class="error-message" id="emailError"></p></div>
             </div>
-            <div class="form-group"><label for="subject">Sujet</label><select id="subject" name="subject"><option value="">Choisir un sujet</option><option>Demande d'information</option><option>Question sur les formations</option><option>Contact enseignant</option><option>Autre</option></select><p class="error-message" id="subjectError"></p></div>
-            <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" placeholder="Votre message..."></textarea><p class="error-message" id="messageError"></p></div>
-            <button class="btn" type="submit">Envoyer</button>
-            <p class="success-message" id="successMessage">✅ Votre message a bien été validé côté navigateur.</p>
+            <div class="form-row">
+              <div class="form-group"><label for="campus">Campus souhaité</label><select id="campus" name="campus"><option value="">Choisir un campus</option><option>Paris - Villejuif</option><option>Bordeaux</option><option>Pas encore décidé</option></select><p class="error-message" id="campusError"></p></div>
+              <div class="form-group"><label for="subject">Sujet</label><select id="subject" name="subject"><option value="">Choisir un sujet</option><option>Programme Grande École</option><option>Bachelor</option><option>Mastère</option><option>Alternance</option><option>Journée portes ouvertes</option><option>Autre</option></select><p class="error-message" id="subjectError"></p></div>
+            </div>
+            <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" maxlength="600" placeholder="Expliquez votre demande..."></textarea><div class="char-row"><p class="error-message" id="messageError"></p><span id="charCount">0 / 600</span></div></div>
+            <button class="btn" type="submit">Envoyer la demande</button>
+            <p class="success-message" id="successMessage">✅ Votre demande est prête à être envoyée au service admissions.</p>
           </form>
         </div>
-        <aside class="info-card">
-          <h2 style="color:var(--blue);margin-bottom:14px">Informations utiles</h2>
-          <p><strong>Adresse :</strong><br>30-32 Avenue de la République, 94800 Villejuif</p><br>
-          <p><strong>Téléphone :</strong><br>+33 1 46 77 46 77</p><br>
-          <p><strong>Email admissions :</strong><br>admissions@efrei.fr</p><br>
-          <p><strong>Campus Paris :</strong><br>Villejuif, aux portes de Paris</p>
-        
+        <aside class="info-card reveal">
+          <span class="small-title">Informations utiles</span>
+          <h2>Accès rapide</h2>
+          <div class="quick-list">
+            <a href="cours_formation.html">🎓 Voir les formations</a>
+            <a href="#admissions">🧭 Comprendre les admissions</a>
+            <a href="#calendar">📅 Consulter l'agenda</a>
+            <a href="https://www.efrei.fr/candidature/" target="_blank" rel="noopener noreferrer">📝 Candidater sur efrei.fr</a>
+            <a href="https://www.efrei.fr/rendez-vous-personnalises/" target="_blank" rel="noopener noreferrer">🤝 Prendre un rendez-vous personnalisé</a>
+          </div>
+          <div class="contact-box"><strong>Accueil général</strong><br>+33 1 88 28 90 00<br>admissions@efrei.fr</div>
         </aside>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER commun avec coordonnées et liens sociaux -->
   <footer class="site-footer">
-    <div class="container footer-grid"><div class="footer-col"><a class="footer-brand" href="index.html"><img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"></a><p>Département Informatique – site vitrine.</p><div class="socials"><a href="https://www.facebook.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="Facebook EFREI"><img src="img/icon-facebook.svg" alt="Facebook"></a><a href="https://www.twitter.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter EFREI"><img src="img/icon-x.svg" alt="X"></a><a href="https://www.linkedin.com/school/efrei" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn EFREI"><img src="img/icon-linkedin.svg" alt="LinkedIn"></a><a href="https://www.instagram.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="Instagram EFREI"><img src="img/icon-instagram.svg" alt="Instagram"></a><a href="https://www.youtube.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="YouTube EFREI"><img src="img/icon-youtube.svg" alt="YouTube"></a></div></div><div class="footer-col"><h4>Navigation</h4><a href="index.html">Accueil</a><a href="cours_formation.html">Cours &amp; Formations</a><a href="equipe_enseignante.html">Équipe Enseignante</a><a href="contact.html">Contact &amp; À propos</a></div><div class="footer-col"><h4>Formations</h4><a href="cours_formation.html">Bachelor Informatique</a><a href="cours_formation.html">Mastère Cybersécurité</a><a href="cours_formation.html">Cycle Ingénieur IA & Data</a><a href="cours_formation.html">Digital & Management</a></div><div class="footer-col"><h4>Contact</h4><p>📍 Villejuif</p><p>📞 +33 1 46 77 46 77</p><p>✉️ dept.info@efrei.fr</p></div></div>
-    <div class="container footer-bottom"><p>© 2026 Département Informatique - EFREI Paris.</p><div class="footer-links"><a href="#">Mentions légales</a><a href="#">Accessibilité</a><a href="#">Cookies</a></div></div>
+    <div class="container footer-grid"><div class="footer-col"><img class="footer-logo" src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris"><p>Grande école généraliste et numérique, campus Paris-Villejuif et Bordeaux.</p><div class="socials"><a href="https://www.facebook.com/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-facebook.svg" alt="Facebook"></a><a href="https://www.twitter.com/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-x.svg" alt="X"></a><a href="https://www.linkedin.com/school/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-linkedin.svg" alt="LinkedIn"></a><a href="https://www.instagram.com/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-instagram.svg" alt="Instagram"></a><a href="https://www.youtube.com/efrei" target="_blank" rel="noopener noreferrer"><img src="img/icon-youtube.svg" alt="YouTube"></a></div></div><div class="footer-col"><h4>Navigation</h4><a href="index.html">Accueil</a><a href="cours_formation.html">Formations</a><a href="equipe_enseignante.html">Expertises</a><a href="contact.html">Contact & agenda</a><a href="credits.html">Crédits</a></div><div class="footer-col"><h4>Formations</h4><a href="cours_formation.html">Programme Grande École</a><a href="cours_formation.html">Bachelors</a><a href="cours_formation.html">Mastères</a><a href="cours_formation.html">Digital & Management</a></div><div class="footer-col"><h4>Contacts</h4><p>Campus Paris : 30-32 Av. de la République, 94800 Villejuif</p><p>Campus Bordeaux : 83 Rue Lucien Faure, 33000 Bordeaux</p><p>admissions@efrei.fr</p></div></div>
+    <div class="container footer-bottom"><p>© 2026 EFREI Paris — Site vitrine de démonstration.</p><div><a href="index.html">Accueil</a></div></div>
   </footer>
   <script src="js/main.js"></script>
 </body>

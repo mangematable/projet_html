@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- FICHIER HTML : credits.html | Page du site vitrine EFREI. -->
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crédits & réalisation du site — EFREI Paris</title>
+  <meta name="description" content="Crédits du site vitrine EFREI, membres de l'équipe, répartition du travail et technologies utilisées.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+  <!-- HEADER commun à toutes les pages -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Accueil EFREI">
+        <img src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris">
+        <span>Grande école du numérique</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="cours_formation.html">Formations</a></li>
+          <li><a href="equipe_enseignante.html">Expertises</a></li>
+          <li><a href="contact.html">Contact & agenda</a></li>
+          <li><a class="active" href="credits.html">Crédits</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <input class="search-box" type="search" placeholder="Rechercher..." aria-label="Rechercher">
+        <a class="btn" href="contact.html#contactForm">Prendre contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENU PRINCIPAL : crédits et réalisation du site -->
+  <main id="contenu">
+    <!-- HERO DE PAGE : explique le rôle de la page Crédits -->
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="eyebrow">Crédits & réalisation</span>
+        <h1>Réalisation du site</h1>
+        <p>Cette page présente les crédits du site vitrine : l'équipe de réalisation, la répartition du travail et les choix techniques utilisés pour répondre au cahier des charges.</p>
+      </div>
+    </section>
+
+    <!-- PRÉSENTATION : objectif du site et respect de la consigne -->
+    <section class="section">
+      <div class="container split-layout">
+        <div class="reveal">
+          <span class="small-title">Objectif</span>
+          <h2>Un site vitrine pour le département informatique</h2>
+          <p>Le site a été conçu pour présenter l'univers numérique de l'EFREI : formations, expertises, campus, événements, admissions et moyens de contact. L'objectif est de proposer une navigation claire, un design responsive et des interactions simples en JavaScript.</p>
+          <div class="hero-buttons">
+            <a class="btn" href="index.html">Voir l'accueil</a>
+            <a class="btn secondary" href="contact.html#calendar">Voir l'agenda</a>
+          </div>
+       
+        </div>
+        <div class="path-list reveal">
+          <article><strong>HTML5</strong><span>Structure des pages, navigation, sections, formulaires et tableaux.</span></article>
+          <article><strong>CSS3</strong><span>Charte graphique, responsive design, cartes, grilles, animations et mise en page.</span></article>
+          <article><strong>JavaScript</strong><span>Menu mobile, carrousel, filtres, recherche, calendrier dynamique et validation du formulaire.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RÉPARTITION DU TRAVAIL : membres du groupe et tâches réalisées -->
+    <section class="section light-section">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="small-title">Équipe</span>
+          <h2>Qui a réalisé ce site ?</h2>
+          <p>Chaque membre du groupe a participé à la conception, au développement et à l'amélioration du site.</p>
+        </div>
+        <div class="about-grid">
+          <article class="about-card reveal">
+            <div class="avatar">👤</div>
+            <h3>Emile MARIA FRANCIS</h3>
+            <p><strong>Rôle principal :</strong> page Expertises, page Contact & agenda, formulaire et contenus institutionnels.</p>
+            <ul>
+              <li>Création de la structure des pages Expertises et Contact.</li>
+              <li>Ajout du calendrier dynamique et des informations de contact.</li>
+              <li>Amélioration de la navigation et de l'expérience utilisateur.</li>
+            </ul>
+          </article>
+          <article class="about-card reveal">
+            <div class="avatar">👤</div>
+            <h3>Guillaume PIFFETEAU</h3>
+            <p><strong>Rôle principal :</strong> page Accueil, page Formations, contenus pédagogiques et mise en forme.</p>
+            <ul>
+              <li>Création de la page d'accueil et du catalogue de formations.</li>
+              <li>Organisation des sections, cartes et tableaux.</li>
+              <li>Participation à la cohérence graphique du site.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="small-title">Fonctionnalités</span>
+          <h2>Éléments ajoutés pour répondre à la consigne</h2>
+          <p>Le site contient les composants demandés : plusieurs pages, header/footer communs, formulaire, tableau, JavaScript interactif et responsive design.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><span>🧭</span><h3>Navigation complète</h3><p>Menu commun sur toutes les pages, liens internes, boutons d'action et footer avec lien vers la page Crédits.</p></article>
+          <article class="feature-card reveal"><span>📋</span><h3>Formulaire</h3><p>Formulaire de contact avec validation JavaScript, messages d'erreur et message de confirmation.</p></article>
+          <article class="feature-card reveal"><span>📊</span><h3>Tableaux & cartes</h3><p>Présentation des formations, pôles d'expertise, campus et événements sous forme de cartes et tableaux lisibles.</p></article>
+          <article class="feature-card reveal"><span>⚡</span><h3>Dynamique JavaScript</h3><p>Carrousel, filtres interactifs, recherche, menu mobile, animations au scroll et calendrier dynamique.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPEL À L'ACTION : retour vers les pages principales -->
+    <section class="cta-banner">
+      <div class="container reveal">
+        <h2>Une page de crédits claire et complète</h2>
+        <p>Cette page Crédits complète la partie demandée dans la consigne : elle indique les membres du groupe, leur rôle et le travail réalisé.</p>
+        <div class="hero-buttons center">
+          <a class="btn" href="cours_formation.html">Voir les formations</a>
+          <a class="btn secondary" href="contact.html">Contact & agenda</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER commun -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <img class="footer-logo" src="img/Logo_Efrei_2022.svg.png" alt="Logo EFREI Paris">
+        <p>Grande école généraliste et numérique, campus Paris-Villejuif et Bordeaux.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="Facebook EFREI"><img src="img/icon-facebook.svg" alt="Facebook"></a>
+          <a href="https://www.twitter.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="X EFREI"><img src="img/icon-x.svg" alt="X"></a>
+          <a href="https://www.linkedin.com/school/efrei" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn EFREI"><img src="img/icon-linkedin.svg" alt="LinkedIn"></a>
+          <a href="https://www.instagram.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="Instagram EFREI"><img src="img/icon-instagram.svg" alt="Instagram"></a>
+          <a href="https://www.youtube.com/efrei" target="_blank" rel="noopener noreferrer" aria-label="YouTube EFREI"><img src="img/icon-youtube.svg" alt="YouTube"></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Navigation</h4><a href="index.html">Accueil</a><a href="cours_formation.html">Formations</a><a href="equipe_enseignante.html">Expertises</a><a href="contact.html">Contact & agenda</a><a href="credits.html">Crédits</a></div>
+      <div class="footer-col"><h4>Formations</h4><a href="cours_formation.html">Programme Grande École</a><a href="cours_formation.html">Bachelors</a><a href="cours_formation.html">Mastères</a><a href="cours_formation.html">Digital & Management</a></div>
+      <div class="footer-col"><h4>Contacts</h4><p>Campus Paris : 30-32 Av. de la République, 94800 Villejuif</p><p>Campus Bordeaux : 83 Rue Lucien Faure, 33000 Bordeaux</p><p>admissions@efrei.fr</p></div>
+    </div>
+    <div class="container footer-bottom"><p>© 2026 EFREI Paris — Site vitrine de démonstration.</p><div><a href="contact.html">Contact</a> · <a href="credits.html">Crédits</a></div></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
